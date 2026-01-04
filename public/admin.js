@@ -1,4 +1,4 @@
-const API = "http://localhost:3000/tables";
+const API = window.__API__ + "/api/tables";
 const ADMIN_KEY = "24o42o08";
 const PIN_CODE = "24042008"; // ← СМЕНИ НА СВОЙ
 
