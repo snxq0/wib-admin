@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>WiB · Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<!-- PIN SCREEN -->
+<div id="pin-screen" class="pin-screen">
+  <div class="pin-box">
+    <h1>WiB</h1>
+    <p>Admin Access</p>
+    <input id="pin-input" type="password" placeholder="PIN" maxlength="16" />
+    <button onclick="checkPin()">Enter</button>
+    <div id="pin-error">Falscher PIN</div>
+  </div>
+</div>
+
+<!-- ADMIN APP -->
+<div id="app" class="hidden">
+  <header class="topbar">
+    <h1>WiB <span>Admin</span></h1>
+  </header>
+
+  <main class="container">
+    <div id="tables" class="grid"></div>
+  </main>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

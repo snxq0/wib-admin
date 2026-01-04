@@ -1,0 +1,149 @@
+:root {
+  --bg: #09090B;
+  --card: #111113;
+  --border: #1F1F23;
+  --text: #E5E7EB;
+  --muted: #9CA3AF;
+  --green: #166534;
+  --red: #7F1D1D;
+  --yellow: #92400E;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.topbar {
+  padding: 20px 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.topbar span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.container {
+  padding: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.table-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.table-id {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.status {
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+button {
+  flex: 1;
+  padding: 6px 0;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.free { background: var(--green); }
+.busy { background: var(--red); }
+.reserved { background: var(--yellow); }
+
+.hidden {
+  display: none;
+}
+
+/* PIN SCREEN */
+.pin-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pin-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 32px;
+  border-radius: 16px;
+  width: 280px;
+  text-align: center;
+}
+
+.pin-box h1 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.pin-box p {
+  margin: 6px 0 20px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.pin-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #0f0f12;
+  color: var(--text);
+  font-size: 14px;
+  text-align: center;
+}
+
+.pin-box button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #166534;
+  color: #fff;
+  cursor: pointer;
+}
+
+#pin-error {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ef4444;
+  display: none;
+}
