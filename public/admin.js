@@ -72,3 +72,5 @@ function render(tables) {
 
 window.setStatus = setStatus;
 window.checkPin = checkPin;
+
+console.log("ADMIN_KEY:", ADMIN_KEY)
